@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "",
+  "authors": [
+    "MarkSmoke"
+  ],
+  "contact": {
+    "homepage": "https://github.com/MarkSmoke/Auto-Reconect-Minecraft-1.18",
+    "sources": "https://github.com/MarkSmoke/Auto-Reconect-Minecraft-1.18",
+    "issues": "https://github.com/MarkSmoke/Auto-Reconect-Minecraft-1.18"
+  },
+  "license": "CC0-1.0",
+  "icon": "",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "autoreconnect.AutoReconnect"
+    ],
+    "modmenu": [
+      "autoreconnect.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "autoreconnect.mixins.json"
+  ],
+  "depends": {
+    "java": ">=17",
+    "fabric": "*",
+    "fabricloader": ">=0.11.3",
+    "minecraft": ">=1.18.1",
+    "cloth-config2": ">=6.0.0"
+  },
+  "suggests": {
+    "modmenu": ">=3.0.0"
+  }
+}
